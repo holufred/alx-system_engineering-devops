@@ -1,0 +1,2 @@
+#!/bin/bash
+(ls -aF | sort -f | awk 'BEGIN{ORS=", "} /^[.]/ {next} {print} END{print "."; print ".."}') | sed 's/, \n/\n/'
