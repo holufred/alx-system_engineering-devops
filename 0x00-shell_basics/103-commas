@@ -1,2 +1,2 @@
 #!/bin/bash
-(echo ./ ../ && ls -Ap | sort -f) | paste -sd ', ' - | sed 's/, $/\n/'
+echo ./, ../, $(ls -Ap | sort -f | tr '\n' ',' | sed 's/,/, /g' | sed 's/, $//')
