@@ -1,2 +1,2 @@
 #!/bin/bash
-ls -a1p | sort -f | sed 's/^\.\/$/. \.\. /' | awk '{print}' ORS=', ' | sed 's/, $/\n/'
+(echo ./ ../ && ls -Ap | sort -f) | paste -sd ', ' - | sed 's/, $/\n/'
