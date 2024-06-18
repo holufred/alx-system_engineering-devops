@@ -1,2 +1,2 @@
 #!/bin/bash
-find . -empty -print | sed 's|.*/||' | xargs -I {} echo {}
+find . -empty -exec sh -c 'for f; do echo "${f##*/}"; done' _ {} +
