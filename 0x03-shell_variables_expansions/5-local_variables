@@ -1,2 +1,2 @@
 #!/bin/bash
-echo "$(set -o posix) $(set) $(env) $(declare -f)"
+echo "$(set) $(env) $(declare -f)"
