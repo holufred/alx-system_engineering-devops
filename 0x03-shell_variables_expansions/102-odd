@@ -1,2 +1,2 @@
 #!/bin/bash
-grep -Ev '^([0-9]+ )?\1$' |grep -v "README.md"
+nl | grep -E '^[[:space:]]*([13579]|[0-9]{2,}[13579])[[:space:]]' | cut -f2-
