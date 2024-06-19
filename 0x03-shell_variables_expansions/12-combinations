@@ -1,2 +1,2 @@
 #!/bin/bash
-echo {a..n}{a..n} | tr -d '\n' | fold -w2 | grep -v 'oo'
+echo {a..n}{a..n} | tr ' ' '\n' | grep -v 'oo'
