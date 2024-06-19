@@ -1,2 +1,2 @@
 #!/bin/bash
-echo $((( ${#WATER}+${#STIR} ) > 0 ) + 0) | tr 01 belhnort
+printf "%d" "$((2#$WATER + 5#$STIR))" | tr '0123456789' 'bestchol'
