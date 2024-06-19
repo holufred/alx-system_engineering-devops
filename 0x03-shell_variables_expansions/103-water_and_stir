@@ -1,2 +1,2 @@
 #!/bin/bash
-echo $(( ${#WATER}+${#STIR} )) | tr 01234567 belhnort
+echo $((( ${#WATER}+${#STIR} ) > 0 ) + 0) | tr 01 belhnort
