@@ -1,2 +1,2 @@
 #!/bin/bash
-echo {a..z}{a..n} $'\n' {a..z}{p..z}
+echo {a..n}{a..n} | tr -d '\n' | fold -w2 | grep -v 'oo'
