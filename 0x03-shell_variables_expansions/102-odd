@@ -1,2 +1,2 @@
 #!/bin/bash
-grep -Ev '^([0-9]+ )?\1$'
+grep -Ev '^([0-9]+ )?\1$' |grep -v "README.md"
